@@ -10,23 +10,40 @@ body {
 .header-a:hover {
     color: rgb(0, 0, 0);
 }
+table tr:nth-child(odd) {
+    background: #fff;
+}
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
 .site-header {
-    margin: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f5f5f5;
+    margin: 0;
     padding: 0.5em 1em;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .site-identity {
     font-size: 1.2em;
     margin: 1em 0.1em;
     display: inline-block;
 }
-.site-navigation ul,
-.site-navigation li {
+
+.site_navigation__link {
     margin: 0;
     padding: 0;
 }
-.site-navigation li {
+.site-navigation_links {
+    margin: 0;
+    padding: 0;
+}
+.site-navigation_link {
     display: inline-block;
     margin: 1em 1em 1em 1em;
 }
@@ -55,6 +72,8 @@ h1 {
     margin-top: 150px;
     font-family: Noto Sans, sans-serif;
     font-size: 55px;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 cite {
@@ -87,23 +106,55 @@ cite {
 
 .main-section-img {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Noto Sans, Light, sans-serif;
 }
 
-.img-one {
-    margin-left: 90px;
-    margin-top: 70px;
+.img-one, .img-two {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px;
 }
 
-.img-two {
-    margin-left: 140px;
-    margin-top: 150px;
+.img-one img, .img-two img {
+    max-width: 100%;
+    height: auto;
 }
 
 .img-text {
-    margin-top: 3%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
     font-family: Noto Sans, Light, sans-serif;
-    font-size: 27px;
 }
+.text-style-img {
+    font-family: Noto Sans, Light, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .img-one, .img-two {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+
+    .img-text {
+        font-size: 1.2rem;
+        font-family: Noto Sans, Light, sans-serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-one, .img-two {
+        flex: 1 1 30%;
+    }
+
+    .img-text {
+        font-size: 1rem;
+        font-family: Noto Sans, Light, sans-serif;
+    }
+}
+
 
 footer {
     margin-top: 80px;
@@ -120,34 +171,85 @@ footer {
     display: flex;
 }
 
-.table-1-1 {
-    margin-left: 90px;
-    width: 200px;
-    margin-top: 150px;
-    font-size: 25px;
-    font-family: Noto Sans, sans-serif;
+/* Основные стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
 }
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+.table-1-1, .table-1-2, .table-2-2 {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.table-1-1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
 .table-1-2 {
-    margin-left: 90px;
-    width: 1000px;
-    margin-top: 215px;
-    font-size: 25px;
-    font-family: Noto Sans, Light, sans-serif;
+    width: 70%;
 }
 
 .table-2-2 {
-    font-family: Noto Sans, Light, sans-serif;
-    margin-top: 40px;
-    font-size: 22px;
-    margin-left: 90px;
-    font-weight: 10;
-    color: #8a8a8a;
+    font-size: 1.2rem;
+    text-align: left;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 .table-2-2 p {
-    margin-left: 0;
-    font-weight: lighter;
+    text-align: left;
+    margin-top: 5px;
 }
+
+@media (max-width: 768px) {
+    .table-1-1, .table-1-2, .table-2-2 {
+        font-size: 0.9rem;
+    }
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0;
+        border: none;
+    }
+
+    .table-1-1, .table-2-2 {
+        text-align: center;
+    }
+
+    .table-1-2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .table-2-2 q {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .table-2-2 p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table-1-1, .table-1-2, .table-2-2 {
+        font-size: 1.3rem;
+    }
+}
+
 .contacts {
     margin-left: 80px;
     font-size: 32px;
