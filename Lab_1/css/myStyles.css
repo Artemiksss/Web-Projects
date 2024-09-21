@@ -1,0 +1,183 @@
+body {
+    background-color: #f5f5f5;
+}
+.header-a {
+    text-decoration: none;
+    color: rgb(179, 179, 179);;
+    font-family: "Julius Sans One", r, serif;
+
+}
+.header-a:hover {
+    color: rgb(0, 0, 0);
+}
+.site-header {
+    margin: 20px 20px;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.site-identity {
+    font-size: 1.2em;
+    margin: 1em 0.1em;
+    display: inline-block;
+}
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li {
+    display: inline-block;
+    margin: 1em 1em 1em 1em;
+}
+
+.pressed-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0;
+    border-radius: 8px;
+    background-color: rgb(147, 184, 180);
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: #f5f5f5;
+}
+
+.my-text-style {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-family: Noto Sans, sans-serif;
+    font-size: 55px;
+}
+
+cite {
+    color: #93b8b4;
+    font-family: Arial, sans-serif;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Для выравнивания текста по вертикали */
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(147, 184, 180);
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    color: #f5f5f5;
+    margin: 0 auto; /* Для горизонтального выравнивания кнопки */
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Высота экрана */
+}
+
+.main-section-img {
+    display: flex;
+}
+
+.img-one {
+    margin-left: 90px;
+    margin-top: 70px;
+}
+
+.img-two {
+    margin-left: 140px;
+    margin-top: 150px;
+}
+
+.img-text {
+    margin-top: 3%;
+    font-family: Noto Sans, Light, sans-serif;
+    font-size: 27px;
+}
+
+footer {
+    margin-top: 80px;
+    background-color: #d9d9d9;
+    width: 100vw;
+    position:absolute;
+    left:0;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-description {
+    display: flex;
+}
+
+.table-1-1 {
+    margin-left: 90px;
+    width: 200px;
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: Noto Sans, sans-serif;
+}
+.table-1-2 {
+    margin-left: 90px;
+    width: 1000px;
+    margin-top: 215px;
+    font-size: 25px;
+    font-family: Noto Sans, Light, sans-serif;
+}
+
+.table-2-2 {
+    font-family: Noto Sans, Light, sans-serif;
+    margin-top: 40px;
+    font-size: 22px;
+    margin-left: 90px;
+    font-weight: 10;
+    color: #8a8a8a;
+}
+
+.table-2-2 p {
+    margin-left: 0;
+    font-weight: lighter;
+}
+.contacts {
+    margin-left: 80px;
+    font-size: 32px;
+    font-family: Noto Sans, sans-serif;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.contacts-list {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.help {
+    font-size: 32px;
+    font-family: Noto Sans, sans-serif;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+.test-style {
+    margin-top: 20px;
+    margin-right: 140px;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.my-br {
+    margin-bottom: 20px;
+}
